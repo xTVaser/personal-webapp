@@ -1,1 +1,0 @@
-{:database-url "postgresql://localhost/webapp_dev?user=db_user_name_here&password=db_user_password_here"}

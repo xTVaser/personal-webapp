@@ -1,9 +1,14 @@
 (ns personal-webapp.views.contact
   (:require [clojure.string :as str]
-            [hiccup.page :as page]
+            [personal-webapp.views.common :refer [gen-nav-bar gen-content-container]]
+            [hiccup.page :as page :refer [include-css]]
             [ring.util.anti-forgery :as util]))
 
 (defn contact-page
   []
   (page/html5
-    [:h1 "Contact Page"]))
+    (include-css "/css/styles.css")
+    (include-css "https://fonts.googleapis.com/css?family=Passion+One")
+    (include-css "https://fonts.googleapis.com/css?family=Roboto")
+    (gen-nav-bar)
+    (gen-content-container "ye")))

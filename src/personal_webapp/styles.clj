@@ -67,7 +67,7 @@
             {:margin-right "2em"
              :text-decoration 'none}]
            [:.content
-            {:margin-left "12.5%"
-             :margin-right "12.5%"
+            {:margin-left "25%"
+             :margin-right "25%"
              :margin-top "5%"
              :margin-bottom "5%"}])

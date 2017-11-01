@@ -19,9 +19,9 @@
    [:br]])
 
 (defn gen-content-container
-  [content]
+  [& content]
   (hiccup/html
-    [:div {:class "col-3-4 content"}
+    [:div {:class "col-1-2 content"}
      content]
     [:div {:class 'clear}]
     [:br]))

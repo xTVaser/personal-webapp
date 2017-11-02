@@ -4,12 +4,13 @@
 
 (defstyles screen
            [:body
-            {:font-family 'Roboto}]
+            {:font-family 'Roboto
+             :background "#f3f3f3"}]
 
            [:.navbar
             {:font-family "Passion One"
              :padding-top "1em"
-             :padding-bottom "1em"}]
+             :background "#baafbd"}]
 
            [:.navbar :h1
             {:font-weight 'normal}]
@@ -62,12 +63,42 @@
              :text-align 'right}]
 
            [:.nav-container
-            {:margin-top "0.5em"}]
+            {:margin-top "0.5em"
+             :position 'relative
+             :z-index 12}]
            [:.nav-link
             {:margin-right "2em"
-             :text-decoration 'none}]
+             :text-decoration 'none
+             :color 'white
+             :text-shadow "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"}]
            [:.content
             {:margin-left "25%"
              :margin-right "25%"
              :margin-top "5%"
-             :margin-bottom "5%"}])
+             :margin-bottom "5%"
+             :position 'relative
+             :z-index 2}]
+           [:.navbar-color-stripe
+            {:height "0.25em"
+             :background "#f3f3f3"
+             :margin-top "0.25em"
+             :z-index 10
+             ::position 'relative}]
+
+           [:.background-frill
+            {:width 0
+             :height 0
+             :z-index 1
+             :position 'absolute
+             :top 0
+             :border-top "456px solid #5d3d61"
+             :border-right "456px solid transparent"}]
+
+           [:.post-title
+            {:margin-bottom "0.5em"}]
+
+           [:.heading
+            {:margin-bottom "1em"}]
+
+           [:.post
+            {:margin-top "5em"}])

@@ -40,10 +40,11 @@
   []
   (let [latest-blog (get-blog-summary)]
     (hiccup.core/html
-      [:h2 {:class "post-title"}
-       (first latest-blog)]
-      [:p {:class "blog-summary"}
-       (last latest-blog)])))
+      [:div {:class "post"}
+       [:h2 {:class "post-title"}
+        (first latest-blog)]
+       [:p {:class "blog-summary"}
+        (last latest-blog)]])))
 
 (defn home-page
   []
